@@ -39,7 +39,7 @@ return [
     ],
 
     'custom_gateways' => [
-        'errorlog' => \Leonis\Notifications\EasySms\Gateways\ErrorLogGateway::class,
-        'winic' => \Leonis\Notifications\EasySms\Gateways\WinicGateway::class,
+        'errorlog' => \Vance\LaravelNotificationEasySms\Gateways\ErrorLogGateway::class,
+        'winic' => \Vance\LaravelNotificationEasySms\Gateways\WinicGateway::class,
     ],
 ];
