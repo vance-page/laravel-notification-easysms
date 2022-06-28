@@ -5,7 +5,7 @@
 ## 安装
 
 ```shell
-$ composer require leonis/easysms-notification-channel
+$ composer require vance-page/laravel-notification-easysms
 ```
 
 ## 配置
@@ -15,14 +15,14 @@ $ composer require leonis/easysms-notification-channel
     ```php
     'providers' => [
         // ...
-        Leonis\Notifications\EasySms\EasySmsChannelServiceProvider::class,
+        Vance\\LaravelNotificationEasySms\EasySmsChannelServiceProvider::class,
     ],
     ```
 
 2. 创建配置文件：
 
     ```shell
-    $ php artisan vendor:publish --provider="Leonis\Notifications\EasySms\EasySmsChannelServiceProvider"
+    $ php artisan vendor:publish --provider="Vance\\LaravelNotificationEasySms\EasySmsChannelServiceProvider"
     ```
     
 3. 修改应用根目录下的 config/easysms.php 中对应的参数即可。
@@ -40,8 +40,8 @@ $ composer require leonis/easysms-notification-channel
     use Illuminate\Notifications\Notification;
     use Illuminate\Contracts\Queue\ShouldQueue;
     use Illuminate\Notifications\Messages\MailMessage;
-    use Leonis\Notifications\EasySms\Channels\EasySmsChannel;
-    use Leonis\Notifications\EasySms\Messages\EasySmsMessage;
+    use Vance\LaravelNotificationEasySms\Channels\EasySmsChannel;
+    use Vance\LaravelNotificationEasySms\Messages\EasySmsMessage;
 
     class VerificationCode extends Notification
     {
@@ -105,4 +105,4 @@ $ composer require leonis/easysms-notification-channel
 
 ## License
 
-[MIT](https://github.com/yl/easysms-notification-channel/blob/master/LICENSE)
+[MIT](https://github.com/vance-page/laravel-notification-easysms/blob/master/LICENSE)

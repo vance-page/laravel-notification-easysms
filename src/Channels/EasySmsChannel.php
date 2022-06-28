@@ -1,18 +1,11 @@
 <?php
 
-/*
- * This file is part of the leonis/easysms-notification-channel.
- * (c) yangliulnn <yangliulnn@163.com>
- * This source file is subject to the MIT license that is bundled
- * with this source code in the file LICENSE.
- */
-
-namespace Leonis\Notifications\EasySms\Channels;
+namespace Vance\LaravelNotificationEasySms\Channels;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\AnonymousNotifiable;
 use Illuminate\Notifications\Notification;
-use Leonis\Notifications\EasySms\Exceptions\CouldNotSendNotification;
+use Vance\LaravelNotificationEasySms\Exceptions\CouldNotSendNotification;
 
 class EasySmsChannel
 {
